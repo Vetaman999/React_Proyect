@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Componente from "./componets/Componente";
+import Propiedades from "./componets/Propiedades";
 
 function App() {
   return (
@@ -17,6 +19,20 @@ function App() {
         >
           Learn React
         </a>
+        <section>
+          <Componente msg="Hola soy un component" />
+          <hr />
+          <Propiedades
+            cadena="Esto es una cadena de texto"
+            numero={19}
+            booleano={true}
+            arreglo={[1,2,3]}
+            objeto={{nombre:"Hugo", correo:"hugo.quispe12359@gmail.com"}}
+            funtion={(numero)=> numero*numero}
+            elemReact={<i>Esto es una propiedad de React</i>}
+            componenteReact={<Componente msg="Soy el componente"/>}
+          />
+        </section>
       </header>
     </div>
   );
