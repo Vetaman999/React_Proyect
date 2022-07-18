@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Componente from "./componets/Componente";
 import Propiedades from "./componets/Propiedades";
+import Estado from "./componets/Estado";
+import RenderizadoCondicional from "./componets/RenderizadoCondicional";
 
 function App() {
   return (
@@ -32,6 +34,10 @@ function App() {
             elemReact={<i>Esto es una propiedad de React</i>}
             componenteReact={<Componente msg="Soy el componente"/>}
           />
+          <hr/>
+          <Estado/>          
+          <hr/>
+          <RenderizadoCondicional/>
         </section>
       </header>
     </div>

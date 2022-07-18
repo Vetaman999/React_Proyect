@@ -24,5 +24,6 @@ Propiedades.defaultProps = {
 };
 
 Propiedades.propTypes = {
+    //para que el valor sea numero y requerido.
     numero: PropTypes.number.isRequired
 };
